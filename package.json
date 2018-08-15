@@ -4,5 +4,24 @@
   "main": "index.js",
   "repository": "https://pieterbergwerff@github.com/rhzorg/backend.git",
   "author": "P. Bergwerff <p.bergwerff@studiostaat.nl>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "clear && babel-node ./scripts/development.js",
+    "build": "yarn pre-build && clear && babel-node ./scripts/production.js",
+    "pre-build": "rm -Rf ./dist",
+    "deploy": "yarn build && yarn start"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-header": "^2.0.5",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "sha1": "^1.1.1"
+  }
 }

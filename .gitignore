@@ -1,5 +1,7 @@
 # Confg files
 config/
+build/
+dist/
 
 # Logs
 logs
