@@ -1,0 +1,8 @@
+{
+  "name": "rhzorg-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://pieterbergwerff@github.com/rhzorg/backend.git",
+  "author": "P. Bergwerff <p.bergwerff@studiostaat.nl>",
+  "license": "MIT"
+}

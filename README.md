@@ -1,2 +1,2 @@
 # backend
-A backend application fro rhzorg.nl
+A backend application for rhzorg.nl.
